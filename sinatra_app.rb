@@ -11,17 +11,12 @@ require_relative "twt.rb"
 
   get '/getalltweet' do
       @tweets = twit.showAllTweets
-      erb :userInfo
-  end
-
-  get '/getalltweet' do
-      @tweets = twit.showAllTweets
-      erb :userInfo
+      erb :tweets
   end
 
   get '/showUserTweets/:screenname' do
       @tweets = twit.showUserTweets(params[:screenname])
-      erb :userInfo
+      erb :tweets
   end
 
 
