@@ -31,7 +31,7 @@ class Twit
 	 	 client.user_timeline.each {|item| puts item.text}
 	end
 
-	def showAllUserTweets(userScreenName)					
+	def showUserTweets(userScreenName)					
 	 	 client.user_timeline(userScreenName).each {|item| puts item.text}
 	end
 
